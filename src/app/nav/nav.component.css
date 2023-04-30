@@ -1,0 +1,21 @@
+.navbar{
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    overflow: hidden;
+}
+.site-name{
+    float: left;
+}
+.site-menu{
+    flex-flow: column;
+    flex-wrap: no-wrap;
+    float: right;
+    flex-direction: column;
+}
+.site-menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
