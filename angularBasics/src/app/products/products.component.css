@@ -1,0 +1,36 @@
+.card{
+    padding: 9px;
+    margin:5px;
+    box-shadow: 1px 2px 3px 0px;
+    width: fit-content;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.name-container{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.detailContainer{
+    margin-top: 5px;
+}
+.buttonContainer{
+    margin-top: 5px;
+}
+.success{
+    background-color: rgb(12, 95, 13);
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+.warning{
+    background-color: rgb(255, 230, 0);
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 4px;
+}
