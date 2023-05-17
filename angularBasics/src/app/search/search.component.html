@@ -1,3 +1,4 @@
 <div class="search-div">
-    <input type="text" placeholder="kya chahiye re tere ko" (input)="searchOp($event)">
+    <input type="text" placeholder="kya chaiye re tere ko.." [(ngModel)]="searchValue" (input)="changeSearchValue($event)">
+    <span *ngIf="searchValue != ''">You searched for "{{ searchValue }}"</span>
 </div>

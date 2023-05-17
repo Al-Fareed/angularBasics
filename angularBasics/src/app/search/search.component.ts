@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+selector: 'app-search',
+templateUrl: './search.component.html',
+styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  searchValue:string = '';
-  searchOp(data:Event){
-    this.searchValue =(<HTMLInputElement>data.target).value;
-  }
+searchValue: string = '';
+
+changeSearchValue(event: Event) {
+this.searchValue = (event.target as HTMLInputElement).value;
+}
 }
