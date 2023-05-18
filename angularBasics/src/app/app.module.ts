@@ -8,6 +8,17 @@ import { HeaderComponent } from './header/header.component';
 import { NotificationComponent } from './notification/notification.component';
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { Route, RouterModule, Routes } from '@angular/router';
+
+const appRoute:Routes =[
+  {path:'Home',component:ContainerComponent},
+  {path:'',redirectTo:'Home',pathMatch:'full'},
+  {path:'About',component:AboutComponent},
+  {path:'Contact',component:ContactComponent}
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,10 +27,13 @@ import { ProductsComponent } from './products/products.component';
     HeaderComponent,
     NotificationComponent,
     SearchComponent,
-    ProductsComponent
+    ProductsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
