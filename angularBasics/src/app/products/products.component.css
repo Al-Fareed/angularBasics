@@ -28,6 +28,13 @@
     border-radius: 5px;
     color: white;
 }
+.danger{
+    border-radius: 5px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    margin-left: 4px;
+}
 .warning{
     background-color: rgb(255, 230, 0);
     padding: 4px;
