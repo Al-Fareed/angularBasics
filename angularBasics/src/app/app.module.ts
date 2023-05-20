@@ -11,14 +11,15 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './error/error.component';
 
 const appRoute:Routes =[
   {path:'Home',component:ContainerComponent},
   {path:'',redirectTo:'Home',pathMatch:'full'},
   {path:'About',component:AboutComponent},
-  {path:'Contact',component:ContactComponent}
+  {path:'Contact',component:ContactComponent},
+  {path:'**',component:ErrorComponent}//must be at last
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ const appRoute:Routes =[
     SearchComponent,
     ProductsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
