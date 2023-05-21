@@ -1,8 +1,9 @@
 input{
-    width: 240px;
+    width: auto;
     height: 38px;
     margin-left: 28px;
     border: none;
+    border-radius: 5px;
     padding:0px 10px ;
 }
 .span{

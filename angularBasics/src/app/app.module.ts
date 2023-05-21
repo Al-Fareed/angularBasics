@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoute:Routes =[
   {path:'Home',component:ContainerComponent},
@@ -31,7 +32,8 @@ const appRoute:Routes =[
     ProductsComponent,
     AboutComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

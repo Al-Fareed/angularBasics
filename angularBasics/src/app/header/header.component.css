@@ -1,7 +1,8 @@
 .header{
     height: 280px;
-    padding: 30px 40px;
     display: flex;
+    position:relative;
+    z-index: -1;
     background-color: #fffefe;
 }
 .site-slogan{

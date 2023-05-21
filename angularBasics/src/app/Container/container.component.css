@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
 }
-.wrapper{
+.body{
+    margin-top: 80px;
+}
+/* .wrapper{
     margin:0px auto;
     width: 820px;
-}
+} */
