@@ -5,16 +5,19 @@ import { Component } from '@angular/core';
   template: `
     <div class="notice" [hidden]="displayNotification">
       <button class="right" (click)="notify()">close</button>
-      <div class="left">This website uses cookies to provide user experience..!</div>
+      <div class="left">This website is developed for Desktop view, will be working on Mobile view </div>
     </div>
   `,
   styles: [`
     .notice {
-      margin: 5px 5px;
+      /* margin: 5px 5px; */
       padding: 2px 0px;
-      color: red;
+      color: white;
       font-weight: bold;
       background-color: #de9f7f;
+      top:73px;
+      width: 100%;
+      position: absolute;
     }
 
     .left {
